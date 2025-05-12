@@ -1,3 +1,4 @@
+@import "tailwindcss";
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #121212;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -45,6 +46,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-top: 2em;
 }
 button:hover {
   border-color: #646cff;
@@ -76,12 +78,14 @@ button:focus-visible {
   line-height: 1.1;
   margin-left: 26.5em;
   align-items: center;
+  margin-top: 2em;
+  color: black
 }
 
 
 .App button {
   display: flex;
-  position: absolute;
+  position: relative;
   justify-content:center;
   background-color: skyblue;
   border-radius: 7px;
@@ -89,4 +93,26 @@ button:focus-visible {
   margin-left: 45em;
   padding: 5px 10px;
 
+}
+
+.App button:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.App button:focus,
+.App button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+.App div form input {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-radius: 7px;
+  color: black;
+  margin-left: 31em;
+  padding: 5px 10px;
 }
